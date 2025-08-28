@@ -1,0 +1,24 @@
+.paws-logo-home
+{
+    text-align: center;
+}
+
+#paws-logo-home-image
+{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 0%;
+    color: royalblue;
+}
+
+p
+{
+    text-align: center;
+}
