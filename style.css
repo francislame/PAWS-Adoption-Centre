@@ -19,7 +19,7 @@
 
 body
 {
-    background-image: url(img/paws-background.png);
+    background-image: url('img/paws-background.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
