@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: 'indie-flower';
+    src: url(fonts/IndieFlower-Regular.ttf);
+}
+
 .paws-logo-home
 {
     text-align: center;
@@ -11,11 +17,22 @@
     height: auto;
 }
 
+body
+{
+    background-image: url(img/paws-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: teal;
+}
+
 h1
 {
     text-align: center;
     margin-top: 0%;
-    color: royalblue;
+    color: #3256a8;
+    font-family: 'indie-flower', sans-serif;
 }
 
 p
