@@ -4,6 +4,17 @@
     src: url(fonts/IndieFlower-Regular.ttf);
 }
 
+/*MOBILE FRIENDLY SETTINGS*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+
 /*INTRO*/
 body, html {
   margin: 0;
