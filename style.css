@@ -4,6 +4,37 @@
     src: url(fonts/IndieFlower-Regular.ttf);
 }
 
+/*INTRO*/
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#intro {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#intro-logo {
+  width: 160px;
+  transition: transform 2s ease, width 2s ease;
+}
+
+@keyframes zoomOut {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/*HOME PAGE*/
 .paws-logo-home
 {
     text-align: center;
@@ -13,25 +44,16 @@
 {
     display: block;
     margin: 0 auto;
-    width: 200px;
+    margin-top: 58px;
+    width: 580px;
     height: auto;
-}
-
-body
-{
-    background-image: url('img/paws-background.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: teal;
 }
 
 h1
 {
     text-align: center;
-    margin-top: 0%;
-    color: #3256a8;
+    margin-top: -40px;
+    color: #213f86;
     font-family: 'indie-flower', sans-serif;
 }
 
@@ -39,3 +61,15 @@ p
 {
     text-align: center;
 }
+
+ul
+{
+    list-style: none;
+    color: #213f86;
+    font-family: 'indie-flower', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
