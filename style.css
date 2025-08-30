@@ -10,10 +10,6 @@ img {
   height: auto;
 }
 
-h1 {
-  font-size: clamp(1.5rem, 5vw, 3rem);
-}
-
 
 /*INTRO*/
 body, html {
@@ -71,44 +67,10 @@ h1
     margin-top: -40px;
     color: #213f86;
     font-family: 'indie-flower', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 p
 {
     text-align: center;
-}
-
-/*PANELS*/
-.comic-panels {
-    display: flex;
-    justify-content: center; /* center the panels horizontally */
-    gap: 20px; /* space between panels */
-    margin-top: 50px; /* push below your logo */
-}
-
-.panel {
-    background-color: #fff8dc; /* light comic-style background */
-    border: 4px solid black;
-    box-shadow: 6px 6px 0 black; /* gives comic-book pop */
-    padding: 10px;
-    text-align: center;
-    width: 200px;
-    transition: transform 0.3s;
-}
-
-.panel img {
-    width: 100%;
-    height: auto;
-}
-
-.panel p {
-    font-family: 'indie-flower', sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-/* optional hover effect for fun */
-.panel:hover {
-    transform: scale(1.05);
-    cursor: pointer;
 }
