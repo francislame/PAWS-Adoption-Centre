@@ -21,7 +21,7 @@ body, html {
 }
 
 #intro {
-  position: fixed;
+  position: center;
   inset: 0;
   background: #ffffff;
   display: flex;
@@ -30,20 +30,41 @@ body, html {
   z-index: 999;
 }
 
-#intro-logo {
-  width: 160px;
-  transition: transform 2s ease, width 2s ease;
+.intro {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 600px;
 }
 
-@keyframes zoomOut {
-  0% { transform: scale(0.5); opacity: 0; }
-  50% { transform: scale(1.2); opacity: 1; }
-  100% { transform: scale(1); }
+#intro-dog-prints1 {
+    position: relative;
+    left: -100%;
+    margin-top: 20%;
+    opacity: 1;
+    animation: slideAndHide 4s forwards;
+}
+
+@keyframes slideAndHide {
+    0% {
+        left: -200%;
+        opacity: 1;
+    }
+    70% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
 }
 
 #main {
     opacity: 0;
     transition: opacity 1s ease;
+    display: block;
 }
 
 /*HOME PAGE*/
@@ -64,7 +85,7 @@ body, html {
 h1
 {
     text-align: center;
-    margin-top: -40px;
+    margin-top: -20px;
     color: #213f86;
     font-family: 'indie-flower', sans-serif;
     font-size: clamp(1.5rem, 5vw, 3rem);
