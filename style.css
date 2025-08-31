@@ -63,8 +63,8 @@ body, html {
 
 #main {
     opacity: 0;
+    display: none;
     transition: opacity 1s ease;
-    display: block;
 }
 
 /*HOME PAGE*/
@@ -89,6 +89,7 @@ h1
     color: #213f86;
     font-family: 'indie-flower', sans-serif;
     font-size: clamp(1.5rem, 5vw, 3rem);
+    display: block;
 }
 
 p
