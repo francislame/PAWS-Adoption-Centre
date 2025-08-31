@@ -1,7 +1,21 @@
-@font-face
-{
+@font-face{
     font-family: 'indie-flower';
     src: url(fonts/IndieFlower-Regular.ttf);
+}
+
+@keyframes slideAndHide {
+    0% {
+        left: -200%;
+        opacity: 1;
+    }
+    70% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
 }
 
 /*MOBILE FRIENDLY SETTINGS*/
@@ -9,7 +23,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
 /*INTRO*/
 body, html {
@@ -46,35 +59,18 @@ body, html {
     animation: slideAndHide 4s forwards;
 }
 
-@keyframes slideAndHide {
-    0% {
-        left: -200%;
-        opacity: 1;
-    }
-    70% {
-        left: 0;
-        opacity: 1;
-    }
-    100% {
-        left: 100%;
-        opacity: 0;
-    }
-}
-
+/*MAIN LOGO INTRO*/
 #main {
     opacity: 0;
     display: none;
     transition: opacity 3s ease;
 }
 
-/*HOME PAGE*/
-.paws-logo-home
-{
+.paws-logo-home {
     text-align: center;
 }
 
-#paws-logo-home-image
-{
+#paws-logo-home-image {
     display: block;
     margin: 0 auto;
     margin-top: 58px;
@@ -82,17 +78,53 @@ body, html {
     height: auto;
 }
 
-h1
-{
-    text-align: center;
-    margin-top: -20px;
-    color: #213f86;
+h1 {
     font-family: 'indie-flower', sans-serif;
     font-size: clamp(1.5rem, 5vw, 3rem);
+    text-align: center;
+    color: #213f86;
+    display: block;
+    margin-top: -20px;
+}
+
+p {
+    text-align: center;
+}
+
+/*MENU PAGE*/
+#menu{
+    display: block;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#menu ul {
+    font-family: 'indie-flower', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: #213f86;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#paws-logo-menu-image {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: auto;
+    z-index: 1000;
     display: block;
 }
 
-p
-{
-    text-align: center;
+#content {
+    background-color: #213f86;
+    font-family: 'indie-flower', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: #ffffff;
+    margin-top: 300px;
 }
