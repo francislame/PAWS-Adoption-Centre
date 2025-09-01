@@ -4,42 +4,39 @@ window.addEventListener("load", () => {
   const main = document.getElementById("main");
   const menu = document.getElementById("menu");
 
-  //Dogprint intro size
-  setTimeout(() =>
-  {
+  // Dogprint intro size
+  setTimeout(() => {
     introDogPrints1.style.transform = "scale(2)";
   }, 300);
 
-  // This will wait for the dog print animation to complete
-  introDogPrints1.addEventListener("animationend", () => 
-  {
-    intro.style.opacity = "0";
+  // Wait for the dog print animation to complete
+  introDogPrints1.addEventListener("animationend", () => {
+    // Fade out intro
     intro.style.transition = "opacity 1s ease";
-    setTimeout(() => 
-    {
+    intro.style.opacity = "0";
+
+    setTimeout(() => {
       intro.style.display = "none";
-      
-      
-      //Main logo animation start
+
+      // Show main logo
       main.style.display = "block";
-      setTimeout(() => 
-      {
+      main.style.transition = "opacity 1s ease";
+      setTimeout(() => {
         main.style.opacity = "1";
-        document.body.style.overflow = "auto";
+        document.body.style.overflow = "auto"; // allow scrolling
       }, 50);
 
-      main.style.transition = "opacity 1s ease";
+      // Show menu after main fades in
+      setTimeout(() => {
+        menu.style.display = "block";
+        menu.style.transition = "opacity 1s ease";
+        menu.style.opacity = "1";
+      }, 1500); // give main ~1.5s to appear
 
-      main.style.opacity = "0";
-      setTimeout(() => 
-      {
-        main.style.display = "none";
-      }, 3000);
-
-      menu.style.display = "block"; 
-        setTimeout(() => {
-          menu.style.opacity = "1";
-        }, 3000);
-    }, 1000);
+      // Redirect to home.html after all animations
+      setTimeout(() => {
+        window.location.href = "home.html";
+      }, 5000); // total wait = intro fade + main + menu
+    }, 1000); // wait for intro fade
   });
 });

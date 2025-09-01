@@ -18,13 +18,12 @@
     }
 }
 
-/*MOBILE FRIENDLY SETTINGS*/
+/* Mobile-friendly settings */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/*INTRO*/
 body, html {
   margin: 0;
   padding: 0;
@@ -59,7 +58,6 @@ body, html {
     animation: slideAndHide 4s forwards;
 }
 
-/*MAIN LOGO INTRO*/
 #main {
     opacity: 0;
     display: none;
@@ -91,34 +89,43 @@ p {
     text-align: center;
 }
 
-/*MENU PAGE*/
 #menu{
     display: block;
     opacity: 0;
     transition: opacity 1s ease;
 }
 
-#menu ul {
-    font-family: 'indie-flower', sans-serif;
-    font-size: clamp(1.5rem, 5vw, 3rem);
-    color: #213f86;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
 #paws-logo-menu-image {
     position: fixed;
     top: 10px;
     left: 10px;
-    width: 200px;
+    width: clamp(80px, 15vw, 100px);
     height: auto;
     z-index: 1000;
-    display: block;
+}
+
+#home-menus {
+    font-family: 'indie-flower', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: bold;
+    color: #213f86;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    border-bottom: 4px solid #213f86;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home-menus a {
+    text-decoration: none;
+    color: #213f86;
 }
 
 #content {
