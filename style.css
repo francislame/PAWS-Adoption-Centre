@@ -28,7 +28,6 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
   font-family: sans-serif;
 }
 
@@ -85,6 +84,16 @@ h1 {
     margin-top: -20px;
 }
 
+h2 {
+    font-family: 'indie-flower', sans-serif;
+    font-size: clamp(8rem, 5vw, 3rem);
+    text-align: center;
+    color: #213f86;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
 p {
     text-align: center;
 }
@@ -93,15 +102,24 @@ p {
     display: block;
     opacity: 0;
     transition: opacity 1s ease;
+    background-color: transparent;
 }
 
 #paws-logo-menu-image {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: clamp(80px, 15vw, 100px);
+    display: block;
+    margin: 20px auto 20px auto;
+    width: clamp(200px, 15vw, 100px);
     height: auto;
-    z-index: 1000;
+}
+
+#cartoon-paws-up {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: clamp(480px, 15vw, 500px);
+    height: auto;
 }
 
 #home-menus {
@@ -109,16 +127,19 @@ p {
     font-size: clamp(1.5rem, 5vw, 3rem);
     font-weight: bold;
     color: #213f86;
+    background-color: transparent;
     list-style: none;
     padding: 0;
-    margin: 30px 0 50px 0;
+    margin: -0.5px 0 50px 0;
     display: flex;
     justify-content: center;
-    gap: 30px;
-
+    gap: 70px;
+    top: 0;
+    position: sticky;
+    z-index: 999;
     border-bottom: 4px solid #213f86;
     padding-bottom: 10px;
-    width: fit-content;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -126,6 +147,30 @@ p {
 #home-menus a {
     text-decoration: none;
     color: #213f86;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px dashed #000000;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#home-menus a:hover {
+    background-color: #213f86; /* changes background on hover */
+    color: #ffffff;             /* changes text color on hover */
+    transform: scale(1.05);     /* slightly enlarges the link */
+    border: 3px solid #000000;
+}
+
+#paws-menu-background-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: url('img/cartoon-paws-up.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: contain;
+    z-index: -1; 
 }
 
 #content {
