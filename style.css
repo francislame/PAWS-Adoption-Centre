@@ -122,8 +122,9 @@ p {
     background-color: transparent;
 }
 
-#logo-and-quote {
+#banner-logo-and-quote {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
 }
@@ -133,15 +134,26 @@ p {
     height: auto;
 }
 
-#banner-quote {
-    font-size: clamp(5rem, 5vw, 5rem);
-    color: #213f86;
-    margin: 0;
-    margin-top: -200px;
-    margin-bottom: 80px;
+#social-media-icons {
+    display: flex;
+    gap: 10px;
 }
 
-#header {
+#social-media-icons img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+#banner-quote {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #213f86;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#banner {
     position: sticky;
     top: 0;
     width: 100%;
@@ -195,7 +207,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: clamp(100px, 25vw, 280px);
+    height: clamp(420px, 25vw, 280px);
     background-image: url('img/cartoon-paws-up.png');
     background-repeat: repeat-x;
     background-position: top;
