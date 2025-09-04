@@ -221,20 +221,27 @@ p {
 }
 
 #news1-title {
-    font-size: 50px;
-    margin-bottom: 0;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 #news1-body1 {
     font-size: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 #news1-body2 {
     font-size: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 #news1-body3 {
