@@ -36,6 +36,24 @@
     }
 }
 
+@media (max-width: 768px) {
+    #news1-body1,
+    #news1-body2,
+    #news1-body3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #news1-body1,
+    #news1-body2,
+    #news1-body3 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 img {
   max-width: 100%;
   height: auto;
