@@ -64,6 +64,7 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: sans-serif;
+  background-color: #fff5e5;
 }
 
 #intro {
@@ -111,11 +112,11 @@ body, html {
 
 h1 {
     font-family: 'indie-flower', sans-serif;
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(2rem, 3vw, 3rem);
     text-align: center;
     color: #213f86;
     display: block;
-    margin-top: -20px;
+    margin-top: 2px;
 }
 
 h2 {
@@ -133,6 +134,14 @@ p {
     font-family: 'indie-flower', sans-serif;
 }
 
+#banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
 #menu{
     display: block;
     opacity: 0;
@@ -140,11 +149,14 @@ p {
     background-color: transparent;
 }
 
-#banner-logo-and-quote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+#banner-quote {
+    font-size: clamp(2rem, 5vw, 5rem);
+    color: #213f86;
+    margin: 0;
+    margin-top: -100px;
+    margin-bottom: 55px;
+    text-align: center;
+    width: 100%;
 }
 
 #paws-logo-menu-image {
@@ -154,7 +166,13 @@ p {
 
 #social-media-icons {
     display: flex;
+    position: absolute;
+    top: 300px;
+    left: 10px;
     gap: 10px;
+    padding: 5px;
+    background-color: white;
+    border: solid #213f86;
 }
 
 #social-media-icons img {
@@ -163,21 +181,23 @@ p {
     cursor: pointer;
 }
 
-#banner-quote {
-    font-size: clamp(2rem, 5vw, 3rem);
-    color: #213f86;
-    margin: 0;
-    text-align: center;
+#paws-menu-background-image {
+    position: absolute;
+    top: 45px;
+    left: 0;
     width: 100%;
+    height: clamp(200px, 35vw, 345px);
+    background-image: url('img/cartoon-paws-up.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: contain;
+    z-index: -1;
 }
 
-#banner {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: #fff;
-    z-index: 1000;
-    transition: all 0.3s ease;
+#dog-and-cat-paws-up {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #213f86;
 }
 
 #home-menus {
@@ -185,7 +205,6 @@ p {
     font-size: clamp(1.5rem, 5vw, 3rem);
     font-weight: bold;
     color: #213f86;
-    background-color: transparent;
     list-style: none;
     padding: 0;
     margin: -0.5px 0 50px 0;
@@ -220,52 +239,34 @@ p {
     border: 3px solid #000000;
 }
 
-#paws-menu-background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: clamp(420px, 25vw, 280px);
-    background-image: url('img/cartoon-paws-up.png');
-    background-repeat: repeat-x;
-    background-position: top;
-    background-size: contain;
-    z-index: -1;
-}
-
-#dog-and-cat-paws-up {
-    display: block;
-    margin: 0 auto;
-}
-
 #news1-title {
     max-width: 800px;
     margin: 0 auto 20px;
     padding: 0 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 50px;
 }
 
 #news1-body1 {
     max-width: 800px;
-    margin: 0 auto 20px;
+    margin: 0 auto 50px;
     padding: 0 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #news1-body2 {
     max-width: 800px;
-    margin: 0 auto 20px;
+    margin: 0 auto 50px;
     padding: 0 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #news1-body3 {
     max-width: 800px;
-    margin: 0 auto 20px;
+    margin: 0 auto 50px;
     padding: 0 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
