@@ -28,6 +28,29 @@
         <li><a href="contact.html">Contact</a></li>
   </ul>
   <h1>Adopt Now!</h1>
-  <p>You can browse our current available pets here!</p>
+  <p>
+    Please fill out the adoption form in order 
+    for our team to review your application.
+  </p>
+
+  <form action="thankyou.html" method="post" id="adoption-form">
+  <h2>Adoption Application</h2>
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone">
+
+  <label for="pet">Pet Interested In:</label>
+  <input type="text" id="pet" name="pet">
+
+  <label for="message">Why do you want to adopt?</label>
+  <textarea id="message" name="message" rows="4"></textarea>
+
+  <button type="submit">Submit Application</button>
+</form>
 </body>
 </html>
