@@ -21,18 +21,40 @@
 @media (max-width: 768px) {
     #home-menus {
         font-size: 1rem;
-        gap: 20px;
-        flex-wrap: wrap;
+        gap: 10px;
         padding: 10px;
+    }
+    #home-menus a {
+        font-size: 0.9rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #social-media-icons {
+        gap: 5px;
+        padding: 3px;
+        margin-left: 20px;
     }
 }
 
 @media (max-width: 480px) {
     #home-menus {
         font-size: 0.9rem;
-        gap: 10px;
-        flex-direction: column;
+        gap: 5px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 5px;
         align-items: center;
+    }
+    #home-menus a {
+        font-size: 0.9rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #social-media-icons {
+        gap: 5px;
+        padding: 3px;
+        margin-left: 20px;
     }
 }
 
@@ -59,7 +81,7 @@ img {
   height: auto;
 }
 
-body, html {
+#main-body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -116,7 +138,7 @@ h1 {
     text-align: center;
     color: #213f86;
     display: block;
-    margin-top: 2px;
+    margin-top: 200px;
 }
 
 h2 {
@@ -139,14 +161,8 @@ p {
     top: 0;
     width: 100%;
     z-index: 1000;
+    margin-bottom: 180px;
     transition: all 0.3s ease;
-}
-
-#menu{
-    display: block;
-    opacity: 0;
-    transition: opacity 1s ease;
-    background-color: transparent;
 }
 
 #banner-quote {
@@ -165,10 +181,10 @@ p {
 }
 
 #social-media-icons {
-    display: flex;
-    position: absolute;
-    top: 300px;
-    left: 10px;
+    display: inline-flex;
+    top: clamp(100px, 15vw, 200px);
+    margin-left: -168px;
+    z-index: 2000;
     gap: 10px;
     padding: 5px;
     background-color: white;
@@ -176,7 +192,7 @@ p {
 }
 
 #social-media-icons img {
-    width: 30px;
+    width: clamp(10px, 5vw, 30px);
     height: auto;
     cursor: pointer;
 }
@@ -192,12 +208,14 @@ p {
     background-position: top;
     background-size: contain;
     z-index: -1;
+    border-bottom: 4px dotted #213f86;
 }
 
-#dog-and-cat-paws-up {
+#menu{
     display: block;
-    margin: 0 auto;
-    border: 3px solid #213f86;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-color: transparent;
 }
 
 #home-menus {
@@ -210,11 +228,10 @@ p {
     margin: -0.5px 0 50px 0;
     display: flex;
     justify-content: center;
-    gap: 70px;
-    top: 0;
-    position: sticky;
-    z-index: 999;
-    border-bottom: 4px solid #213f86;
+    gap: 30px;
+    top: 20px;
+    position: fixed;
+    z-index: 1000;
     padding-bottom: 10px;
     width: 100%;
     margin-left: auto;
@@ -223,6 +240,7 @@ p {
 
 #home-menus a {
     text-decoration: none;
+    font-size: clamp(1rem, 3vw, 2rem);
     color: #213f86;
     background-color: #ffffff;
     border-radius: 12px;
@@ -237,6 +255,15 @@ p {
     color: #ffffff;
     transform: scale(1.05);
     border: 3px solid #000000;
+}
+
+#dog-and-cat-paws-up {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #213f86;
+    width: 400px;
+    height: auto;
+    max-width: none;
 }
 
 #news1-title {
