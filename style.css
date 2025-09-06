@@ -90,6 +90,8 @@ img {
   background-color: #fff5e5;
 }
 
+
+/*INTRO*/
 #intro {
   position: center;
   inset: 0;
@@ -258,6 +260,9 @@ p {
     border: 3px solid #000000;
 }
 
+
+
+/*MAIN PAGE*/
 #dog-and-cat-paws-up {
     display: block;
     margin: 0 auto;
@@ -299,6 +304,9 @@ p {
     font-size: 30px;
 }
 
+
+
+/*ADOPT PAGE*/
 #adopt-intro {
     font-family: 'indie-flower', sans-serif;
     font-size: clamp(1.5rem, 5vw, 2rem);
