@@ -184,14 +184,17 @@ p {
 }
 
 #social-media-icons {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     top: clamp(100px, 15vw, 200px);
-    margin-left: -168px;
     z-index: 2000;
     gap: 10px;
-    padding: 5px;
+    padding: 4px;
     background-color: white;
     border: solid #213f86;
+    width: fit-content;
+    margin: 0 35px;
 }
 
 #social-media-icons img {
