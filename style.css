@@ -137,11 +137,11 @@ img {
 
 h1 {
     font-family: 'indie-flower', sans-serif;
-    font-size: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     text-align: center;
     color: #213f86;
     display: block;
-    margin-top: 250px;
+    margin-top: 80px;
 }
 
 h2 {
