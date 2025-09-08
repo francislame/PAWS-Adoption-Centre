@@ -137,11 +137,11 @@ img {
 
 h1 {
     font-family: 'indie-flower', sans-serif;
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-size: clamp(2rem, 2.5vw, 2rem);
     text-align: center;
     color: #213f86;
     display: block;
-    margin-top: 80px;
+    margin-top: 200px;
 }
 
 h2 {
@@ -309,12 +309,12 @@ p {
 
 
 /*ADOPT PAGE*/
-#adopt-intro {
-    font-family: 'indie-flower', sans-serif;
-    font-size: clamp(1.5rem, 5vw, 2rem);
-    color: #000000;
-    max-width: 600px;
-    margin: 20px auto 0 auto;
+#adopt-body {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 30px;
 }
 
 #adoption-form {
