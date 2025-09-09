@@ -338,12 +338,22 @@ p {
 }
 
 /*ABOUT PAGE*/
-#about-body {
+.about-body {
     max-width: 800px;
     margin: auto;
     padding: 0 20px;
     text-align: center;
+    text-indent: 2em;
     font-size: 30px;
+}
+
+#about-img1 {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #213f86;
+    width: 400px;
+    height: auto;
+    max-width: none;
 }
 
 /*CONTACT PAGE*/
